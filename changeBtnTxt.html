@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id='text'>I learn JavaScript</p>
+  <button id='btn'>Go</button>
+
+  <script>
+    let changeTxt = document.querySelector('#text');
+    let btn = document.querySelector('#btn');
+
+    function btnChangeTxt() {
+      changeTxt.innerHTML = 'I like JS';
+    }
+    btn.addEventListener('click', btnChangeTxt);
+  </script>
+</body>
+
+</html>
