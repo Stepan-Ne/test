@@ -1,2 +1,2 @@
 # test
-There are some examples of JS and jQuery
+There are some files with JS and jQuer
