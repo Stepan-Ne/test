@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .rect {
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='rect'>
+
+  </div>
+  <br>
+  <button class='btn'>Go</button>
+
+  <script>
+    let x = 0;
+    let rect = document.querySelector('.rect');
+    let btn = document.querySelector('.btn');
+
+    function move() {
+      x = x + 5;
+      if (x > 200) {
+        x = 0;
+      }
+      rect.style.left = x + 'px';
+      setTimeout(move, 25);
+
+    }
+
+    btn.onclick = move;
+  </script>
+</body>
+
+</html>
