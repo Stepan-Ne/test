@@ -1,5 +1,5 @@
 body {
-    font-family: var(--ff-secondary);
+    font-family: "Open Sans", sans-serif;
     background: hsl(212, 33%, 89%);
     color:  hsl(209, 61%, 16%);
     line-height: 1.5;
@@ -35,11 +35,11 @@ body {
     text-align: center;
   }
   nav {
-    background: var(--clr-white);
+    background: white;
     height: 3rem;
     display: grid;
     align-items: center;
-    box-shadow: var(--dark-shadow);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
   .nav-center {
     width: 90vw;
@@ -61,5 +61,12 @@ body {
     margin-right: 1rem;
   }
   nav a:hover {
+    color: hsl(205, 78%, 60%);
+  }
+  .btn {
+      padding: 1em;
+      letter-spacing:  0.25rem;
+  }
+  button:hover {
     color: hsl(205, 78%, 60%);
   }
