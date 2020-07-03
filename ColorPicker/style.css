@@ -33,6 +33,8 @@ body {
   }
   .container {
     text-align: center;
+    background-color: bisque;
+    padding: 1em;
   }
   nav {
     background: white;
