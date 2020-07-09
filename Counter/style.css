@@ -1,0 +1,36 @@
+/* Global Styles */
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: skyblue;
+    display: inline-block;
+    border: 2px solid brown;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+}
+.btn:hover {
+    color: green;
+    background-color: gray;
+}
+/* Counter */
+main {
+    min-height: 300px;
+    display: grid;
+    place-items: center;
+}
+.container {
+    text-align: center;
+}
+.btn {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+#value {
+   
+    font-size: 3rem;
+  font-weight: bold;
+}
+.button-container {
+    margin: 2rem;
+}
