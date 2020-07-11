@@ -10,14 +10,20 @@ btns.forEach(btn => {
        const style = event.currentTarget.classList
        if(style.contains('decrease')) {
            counter--
-           value.textContent = counter
        } else if(style.contains('increase')) {
            counter++
-           value.textContent = counter
-
-       } else if (style.contains('reset')) {
+       } else {
            counter = 0
-           value.textContent = counter
        }
+       if (counter > 0) {
+           value.style.color = 'green'
+       }
+       if (counter < 0) {
+           value.style.color = 'skyblue'
+       }
+       if (counter === 0) {
+           value.style.color = 'black'
+       }
+       value.textContent = counter
    })
 });
