@@ -2,15 +2,15 @@
 .btn {
     text-transform: uppercase;
     background: transparent;
-    color: skyblue;
+    color: black;
     display: inline-block;
-    border: 2px solid brown;
+    border: 2px solid black;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 10%;
 }
 .btn:hover {
-    color: green;
-    background-color: gray;
+    color: whitesmoke;
+    background-color: black;
 }
 /* Counter */
 main {
