@@ -33,9 +33,35 @@ const reviews = [
   const img = document.getElementById('person-img')
   const author = document.getElementById('author')
   const job = document.getElementById('job')
-  const img = document.getElementById('person-img')
+  
 
   const prevBtn = document.querySelector('.prev-btn')
   const nextBtn = document.querySelector('.next-btn')
   const randomBtn = document.querySelector('.surprice')
-  
+
+  //set starting item
+  let currentValue = 3
+
+  //load initial item 
+  window.addEventListener('DOMContentLoaded', function() {
+    showPerson(currentValue)
+  })
+
+  //show person based on item
+  function showPerson(person) {
+    const item = reviews[person]
+    img.src = item.img
+    author.textContent = item.name
+    job.textContent = item.job 
+  }
+
+  //show net person
+  nextBtn.addEventListener('click', function() {
+    currentValue++
+    if (currentValue > 3) {
+        currentValue = 0
+        showPerson(currentValue)
+    } else {
+        showPerson(currentValue)
+    }
+  })

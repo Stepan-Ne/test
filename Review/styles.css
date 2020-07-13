@@ -1,15 +1,8 @@
-/*
-=============== 
-Fonts
-===============
-*/
 
-
-/*
-=============== 
+/* =============== 
 Global Styles
-===============
-*/
+=============== */
+
 * {
     box-sizing: border-box;
 }
@@ -72,7 +65,7 @@ main {
 #person-img {
   height: 100%;
   /* object-fit: cover; */
-  border-radius: 50%;
+  border-radius: 7%;
   /* position: relative; */
 
 }
