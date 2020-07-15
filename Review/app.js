@@ -40,7 +40,7 @@ const reviews = [
   const randomBtn = document.querySelector('.surprice')
 
   //set starting item
-  let currentValue = 3
+  let currentValue = 0
 
   //load initial item 
   window.addEventListener('DOMContentLoaded', function() {
@@ -55,11 +55,21 @@ const reviews = [
     job.textContent = item.job 
   }
 
-  //show net person
+  //show next person
   nextBtn.addEventListener('click', function() {
     currentValue++
-    if (currentValue > reviews.length) {
+    if (currentValue > reviews.length - 1) {
         currentValue = 0
+        showPerson(currentValue)
+    } else {
+        showPerson(currentValue)
+    }
+  })
+  //show prev person
+  prevBtn.addEventListener('click', function() {
+    currentValue--
+    if (currentValue < 0) {
+        currentValue = reviews.length - 1
         showPerson(currentValue)
     } else {
         showPerson(currentValue)
