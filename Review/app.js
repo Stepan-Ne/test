@@ -58,7 +58,7 @@ const reviews = [
   //show net person
   nextBtn.addEventListener('click', function() {
     currentValue++
-    if (currentValue > 3) {
+    if (currentValue > reviews.length) {
         currentValue = 0
         showPerson(currentValue)
     } else {
